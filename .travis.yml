@@ -28,6 +28,7 @@ install:
   - export DYLD_FALLBACK_LIBRARY_PATH=$DYLD_FALLBACK_LIBRARY_PATH:/home/travis/miniconda/envs/test-env/lib
   - conda install -c https://conda.anaconda.org/ioos nco
   - python setup.py install
+  - conda update h5py
   - ls /home/travis/miniconda/envs/test-env/lib
   - ls /home/travis/miniconda/envs/test-env/bin
 
